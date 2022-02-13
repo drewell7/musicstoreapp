@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { View, Image, StyleSheet, ScrollView, Text, ImageBackground } from "react-native";
+import { Card } from 'react-native-elements';
 
 const bgImage = { uri: "https://m.media-amazon.com/images/I/71BI6WC0mWL._AC_SL1500_.jpg" };
 
@@ -7,42 +8,77 @@ class Main extends Component {
   render() {
     return (
       <ImageBackground source={bgImage} resizeMode="cover" style={styles.image}>
-      <View style={styles.container}>
-        
         <ScrollView>
-        
-          <Image
-            style={{
-              resizeMode: "cover",
-              height: 210,
-              width: 300
-            }}
-            source={{uri:     'https://media.guitarcenter.com/is/image/MMGS7/J47249000001000-00-720x720.jpg'}}
-          />
-          <Text style={styles.text}>KORG MONOLOGUE</Text>
-          <Image
-            style={{
-              resizeMode: "cover",
-              height: 210,
-              width: 300
-            }}
-            source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/L92399000000000-00-720x720.jpg'}}
-          />
-          <Text style={styles.text}>PIONEER DJ DDJ-REV7</Text>
-          <Image
-            style={{
-              resizeMode: "cover",
-              height: 280,
-              width: 300
-            }}
-            source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/H96225000000000-00-720x720.jpg'}}
-          />
-          <Text style={styles.text}>YAMAHA HS8 8" STUDIO MONITOR</Text>
-          
+          <View style={styles.container}>
+            <Card>
+              <Card.Title>KORG MONOLOGUE</Card.Title>
+              <Card.Divider />
+              <Image
+                style={{
+                  resizeMode: "cover",
+                  height: 210,
+                  width: 300
+                }}
+                source={{uri:     'https://media.guitarcenter.com/is/image/MMGS7/J47249000001000-00-720x720.jpg'}}
+              />
+              <Text style={styles.text}>KORG MONOLOGUE</Text>
+            </Card>
+            <Card>
+              <Card.Title>PIONEER DJ DDJ-REV7</Card.Title>
+              <Card.Divider />
+              <Image
+                style={{
+                  resizeMode: "cover",
+                  height: 210,
+                  width: 300
+                }}
+                source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/L92399000000000-00-720x720.jpg'}}
+              />
+              <Text style={styles.text}>PIONEER DJ DDJ-REV7</Text>
+            </Card>
+            <Card>
+              <Card.Title>YAMAHA HS8 8" STUDIO MONITOR</Card.Title>
+              <Card.Divider />
+              <Image
+                style={{
+                  resizeMode: "cover",
+                  height: 280,
+                  width: 300
+                }}
+                source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/H96225000000000-00-720x720.jpg'}}
+              />
+              <Text style={styles.text}>YAMAHA HS8 8" STUDIO MONITOR</Text>
+            </Card>
+            <Card>
+              <Card.Title>ROLAND TR-08 SOUND MODULE</Card.Title>
+              <Card.Divider />
+              <Image
+                style={{
+                  resizeMode: "cover",
+                  height: 280,
+                  width: 300
+                }}
+                source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/K40860000000000-00-720x720.jpg'}}
+              />
+              <Text style={styles.text}>ROLAND TR-08 SOUND MODULE</Text>
+            </Card>
+            <Card>
+              <Card.Title>YAMAHA HPH-MT7 STUDIO MONITOR HEADPHONES</Card.Title>
+              <Card.Divider />
+              <Image
+                style={{
+                  resizeMode: "cover",
+                  height: 280,
+                  width: 300
+                }}
+                source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/J39276000002000-00-720x720.jpg'}}
+              />
+              <Text style={styles.text}>YAMAHA HPH-MT7 STUDIO MONITOR HEADPHONES</Text>
+            </Card>
+          </View>
         </ScrollView>
-        
-      </View>
       </ImageBackground>
+      
     );
   }
 }
@@ -57,10 +93,6 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: "center"
-  },
-  text: {
-    fontWeight: "bold",
-    color: "white"
   }
 });
 
