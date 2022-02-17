@@ -1,10 +1,11 @@
 import React from 'react';
 import Main from './components/MainComponent';
-import { NavigationContainer } from '@react-navigation/native';
+import KorgMono from './components/KorgMonoPage';
+import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
-
+ 
 export default function App() {
   return (
     <NavigationContainer>
@@ -18,9 +19,10 @@ export default function App() {
             },
               headerTintColor: '#fff',
             }}
-          component={Main} 
-        />
-      </Stack.Navigator>
+            component={Main}
+          />
+        <Stack.Screen name='KorgMono' component={KorgMono} />
+          </Stack.Navigator>
     </NavigationContainer>
   );
 }

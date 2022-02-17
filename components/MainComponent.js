@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { View, Image, StyleSheet, ScrollView, Text, ImageBackground } from "react-native";
+import React from "react";
+import { View, Image, StyleSheet, ScrollView, Text, ImageBackground, TouchableOpacity } from "react-native";
 import { Card } from 'react-native-elements';
 
 const bgImage = { uri: "https://m.media-amazon.com/images/I/71BI6WC0mWL._AC_SL1500_.jpg" };
 
-class Main extends Component {
-  render() {
+function Main({ navigation }) {
+  
     return (
       <ImageBackground source={bgImage} resizeMode="cover" style={styles.image}>
         <ScrollView>
@@ -13,14 +13,16 @@ class Main extends Component {
             <Card>
               <Card.Title>KORG MONOLOGUE</Card.Title>
               <Card.Divider />
-              <Image
-                style={{
-                  resizeMode: "cover",
-                  height: 210,
-                  width: 300
-                }}
-                source={{uri:     'https://media.guitarcenter.com/is/image/MMGS7/J47249000001000-00-720x720.jpg'}}
-              />
+                <TouchableOpacity onPress={() => navigation.push('KorgMono')}>
+                  <Image
+                    style={{
+                      resizeMode: "cover",
+                      height: 210,
+                      width: 300
+                    }}
+                    source={{uri:     'https://media.guitarcenter.com/is/image/MMGS7/J47249000001000-00-720x720.jpg'}} 
+                  />
+                </TouchableOpacity>
               <Text style={styles.text}>KORG MONOLOGUE</Text>
             </Card>
             <Card>
@@ -78,10 +80,9 @@ class Main extends Component {
           </View>
         </ScrollView>
       </ImageBackground>
-      
     );
   }
-}
+
 
 const styles = StyleSheet.create({
   container: {
