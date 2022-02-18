@@ -12,13 +12,23 @@ export default () => {
         <Text style={styles.title}>Korg monologue Monophonic Analog Synthesizer</Text>
         <Divider />
         <Text style={styles.subTitle}>Features</Text>
-        <Text style={styles.feature}><Icon name='chevron-right' type='font-awesome'/>Fully programmable, with 100 program memories (80 presets included)</Text>
-        <Text style={styles.feature}><Icon name='chevron-right' type='font-awesome'/>Microtuning lets you freely create scales and alternate tonalities</Text>
-        <Text style={styles.feature}><Icon name='chevron-right' type='font-awesome'/>16-step sequencer with extensive motion sequence technology to make your sound move</Text>
-        <Text style={styles.feature}><Icon name='chevron-right' type='font-awesome'/>Oscilloscope function helps visualize the waveform in real time</Text>
-        <Text style={styles.feature}><Icon name='chevron-right' type='font-awesome'/>Aluminum top panel, chassis-mounted pots, rubber-coated knobs, and real wood back panel</Text>
+        <View style={{ flexDirection: 'row' }}>
+        <Icon name='caret-right' type='font-awesome' style={{ margin: 5 }}/><Text style={styles.feature}>Fully programmable, with 100 program memories (80 presets included)</Text>
+        </View>
+        <View style={{ flexDirection: 'row' }}>
+        <Icon name='caret-right' type='font-awesome' style={{ margin: 5 }}/><Text style={styles.feature}>Microtuning lets you freely create scales and alternate tonalities</Text>
+        </View>
+        <View style={{ flexDirection: 'row' }}>
+        <Icon name='caret-right' type='font-awesome' style={{ margin: 5 }}/><Text style={styles.feature}>16-step sequencer with extensive motion sequence technology to make your sound move</Text>
+        </View>
+        <View style={{ flexDirection: 'row' }}>
+        <Icon name='caret-right' type='font-awesome' style={{ margin: 5 }}/><Text style={styles.feature}>Oscilloscope function helps visualize the waveform in real time</Text>
+        </View>
+        <View style={{ flexDirection: 'row' }}>
+        <Icon name='caret-right' type='font-awesome' style={{ margin: 5 }}/><Text style={styles.feature}>Aluminum top panel, chassis-mounted pots, rubber-coated knobs, and real wood back panel</Text>
+        </View>
         <Text style={styles.subTitle}>Description</Text>
-        <Text>The monologue by Korg is a programmable analog monophonic synthesizer that shares the sleek layout, knob-per-function workflow and high-quality construction of the best-selling minilogue. monologue is a new synth for all types of musicians; rock keyboard players appreciate its sine, saw and square wave leads and EDM producers will find its bass patches attractive for recording and shows.</Text>
+        <Text style={{ margin: 4 }}>The monologue by Korg is a programmable analog monophonic synthesizer that shares the sleek layout, knob-per-function workflow and high-quality construction of the best-selling minilogue. monologue is a new synth for all types of musicians; rock keyboard players appreciate its sine, saw and square wave leads and EDM producers will find its bass patches attractive for recording and shows.</Text>
       </View>
     </ScrollView>
   );

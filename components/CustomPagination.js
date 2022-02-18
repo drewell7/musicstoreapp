@@ -4,7 +4,7 @@ import { Pagination } from 'react-native-swiper-flatlist';
 
 const styles = StyleSheet.create({
   paginationContainer: {
-    top: 0,
+    top: 285,
   },
   pagination: {
     borderRadius: 2,
