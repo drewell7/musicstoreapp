@@ -27,7 +27,7 @@ export default () => {
 
 const styles = StyleSheet.create({
   image: {
-    height: 350,
+    height: 310,
     width,
   },
 });
