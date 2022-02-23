@@ -10,6 +10,16 @@ function Main({ navigation }) {
       <ImageBackground source={bgImage} resizeMode="cover" style={styles.image}>
         <ScrollView>
           <View style={styles.container}>
+            <View>
+              <Image
+                style={{
+                  resizeMode: 'stretch',
+                  height: 200,
+                  width: 500
+                }}
+                source={require('./images/mainHead.jpg')}
+              />
+            </View>
             <Card>
               <Card.Title>KORG MONOLOGUE</Card.Title>
               <Card.Divider />
