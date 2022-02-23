@@ -28,6 +28,7 @@ function Main({ navigation }) {
             <Card>
               <Card.Title>PIONEER DJ DDJ-REV7</Card.Title>
               <Card.Divider />
+              <TouchableOpacity onPress={() => navigation.push('DjRev7')}>
               <Image
                 style={{
                   resizeMode: "cover",
@@ -36,6 +37,7 @@ function Main({ navigation }) {
                 }}
                 source={{uri: 'https://media.guitarcenter.com/is/image/MMGS7/L92399000000000-00-720x720.jpg'}}
               />
+              </TouchableOpacity>
               <Text style={styles.text}>PIONEER DJ DDJ-REV7</Text>
             </Card>
             <Card>
