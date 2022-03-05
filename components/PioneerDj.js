@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
-import SwiperWithRenderItems from './SwiperWithRenderItems';
+import PioneerSwiperWithRenderItems from './PioneerSwiperWithRenderItems';
 import { Divider, Icon } from 'react-native-elements';
 
 
@@ -8,7 +8,7 @@ export default () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <SwiperWithRenderItems />
+        <PioneerSwiperWithRenderItems />
         <Text style={styles.title}>Pioneer DJ DDJ-REV7 Professional DJ Controller</Text>
         <Divider />
         <Text style={styles.subTitle}>Features</Text>

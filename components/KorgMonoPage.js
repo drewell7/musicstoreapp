@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, ScrollView } from 'react-native';
-import SwiperWithRenderItems from './SwiperWithRenderItems';
+import KorgSwiperWithRenderItems from './KorgSwiperWithRenderItems';
 import { Divider, Icon } from 'react-native-elements';
 
 
@@ -8,7 +8,7 @@ export default () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <SwiperWithRenderItems />
+        <KorgSwiperWithRenderItems />
         <Text style={styles.title}>Korg monologue Monophonic Analog Synthesizer</Text>
         <Divider />
         <Text style={styles.subTitle}>Features</Text>

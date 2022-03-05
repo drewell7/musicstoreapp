@@ -3,3 +3,8 @@ export { default as korgmonoback } from './korgmonoback.jpg';
 export { default as korgmonocorner } from './korgmonocorner.jpg';
 export { default as korgmonoknobs } from './korgmonoknobs.jpg';
 export { default as korgmonokeys } from './korgmonokeys.jpg';
+export { default as ddjrev7top } from './ddjrev7top.jpg';
+export { default as ddjrev7diagonal } from './ddjrev7diagonal.jpg';
+export { default as ddjrev7front } from './ddjrev7front.jpg';
+export { default as ddjrev7back } from './ddjrev7back.jpg';
+export { default as ddjrev7slant } from './ddjrev7slant.jpg';
