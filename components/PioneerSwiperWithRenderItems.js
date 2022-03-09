@@ -20,7 +20,6 @@ export default () => {
         renderItem={({ item }) => <Image style={styles.image} source={item.image} />}
         showPagination
             PaginationComponent={CustomPagination}
-
     />
   );
 };

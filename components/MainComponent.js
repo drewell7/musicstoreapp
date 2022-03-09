@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image, StyleSheet, ScrollView, Text, ImageBackground, TouchableOpacity } from "react-native";
-import { Card } from 'react-native-elements';
+import { Card, SearchBar } from 'react-native-elements';
 
 const bgImage = { uri: "https://m.media-amazon.com/images/I/71BI6WC0mWL._AC_SL1500_.jpg" };
 
@@ -20,6 +20,12 @@ function Main({ navigation }) {
                 source={require('./images/mainHead.jpg')}
               />
             </View>
+            <View style={styles.search}>
+            <SearchBar
+                placeholder="Type Here..."
+              />
+              </View>
+            
             <Card>
               <Card.Title>KORG MONOLOGUE</Card.Title>
               <Card.Divider />
@@ -106,6 +112,9 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: "center"
+  },
+  search: {
+    width: 400
   }
 });
 
